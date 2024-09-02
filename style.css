@@ -16,8 +16,6 @@ body {
     text-align: center;
 }
 
- 
-
 h1 {
     font-size: 24px;
     margin-bottom: 5%;
@@ -28,17 +26,16 @@ h1 {
 p {
     font-size: 16px;
     margin-bottom: 20px;
-    
 }
 
 .calculator {
-
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.calculator-section {
+.calculator-section,
+.calculator-section1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -48,12 +45,7 @@ p {
 }
 
 .calculator-section1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f0f0f0;
     padding: 20px;
-    border-radius: 5px;
 }
 
 label {
@@ -88,7 +80,8 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
-    .calculator-section {
+    .calculator-section,
+    .calculator-section1 {
         flex-direction: column;
         gap: 10px;
     }
